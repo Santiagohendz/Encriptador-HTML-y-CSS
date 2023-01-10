@@ -6,19 +6,27 @@ const botonDesencriptar = document.querySelector(".botondesencriptar");
 const botonCopiar = document.querySelector(".botoncopiar");
 
 function analizarMensaje(){
-  var mensaje = inputTexto.value;
+  var mensaje1 = inputTexto.value;
+  var mensaje2 = inputEncriptado.value;
   var caracteres = "abcdefghijklmnñopqrstuvwxyz";
-  var mensajeErroneo= "";
-  var validador = false;
+  var mensajeErroneo1= "";
+  var mensajeErroneo2= "";
+  var validador = true;
 
-  for(var caracter of mensaje){
+  for(var caracter of mensaje1){
     if(!caracteres.includes(caracter)){
-      mensajeErroneo += `<p class="parrafoerror"> El caracter ${caracter} no es válido'`
+      mensajeErroneo1 = "ERROR"
     }
   }
 
-  if (mensajeErroneo.length == 0){
-    validador = true;
+  for(var caracter of mensaje2){
+    if(!caracteres.includes(caracter)){
+      mensajeErroneo2 = "ERROR"
+    }
+  }
+
+  if (mensajeErroneo1 == "ERROR" || mensajeErroneo2 == "ERROR"){
+    validador = false;
   }
 
   return validador;
