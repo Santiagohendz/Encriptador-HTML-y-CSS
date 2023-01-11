@@ -4,6 +4,10 @@
 
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
     <title>Encriptador by SHU</title>
   </head>
@@ -11,16 +15,21 @@
   <body>
     <main>
       
-      <div class="divtexto">
-        <input class="inputtexto" type="text" name="texto" required placeholder="Ingrese el texto aquí">
-        <input class="botonencriptar"type="button" value="Encriptar">
-        <input class="botondesencriptar"type="button" value="Desencriptar">
-      </div>
+      <section class="secciontexto">
+        <img class="logoprincipal" src="src/Logo Alura.png" alt="Logo Alura azul">
+        <textarea name="areatexto" class="inputtexto" cols="40" rows="10" placeholder="Ingrese el texo aquí"></textarea>
+        <div class="botones">
+          <input class="botonencriptar"type="button" value="Encriptar">
+          <input class="botondesencriptar"type="button" value="Desencriptar">
+        </div>
+      </section>
 
-      <div class="divencriptar">
-        <input class="inputencriptado" type="text" name="texto encriptado">
-        <input class="botoncopiar"type="button" value="Copiar">
-      </div>
+      <section class="seccionencriptar">
+        <textarea name="areaencriptar" class="inputencriptado" cols="30" rows="20"></textarea>
+        <div class="divbotoncopiar">
+          <input class="botoncopiar"type="button" value="Copiar">
+        </div>
+      </section>
       
     </main>
   </body>

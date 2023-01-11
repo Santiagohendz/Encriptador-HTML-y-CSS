@@ -8,7 +8,7 @@ const botonCopiar = document.querySelector(".botoncopiar");
 function analizarMensaje(){
   var mensaje1 = inputTexto.value;
   var mensaje2 = inputEncriptado.value;
-  var caracteres = "abcdefghijklmnñopqrstuvwxyz";
+  var caracteres = "abcdefghijklmnñopqrstuvwxyz ";
   var mensajeErroneo1= "";
   var mensajeErroneo2= "";
   var validador = true;

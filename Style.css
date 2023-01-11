@@ -1,0 +1,133 @@
+body{
+  font-family: 'Comic Neue', cursive;
+  background: #D8DFE8;
+}
+
+.secciontexto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+
+.inputtexto{
+  position: absolute;
+  left: 240px;
+  top: 168px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0A3871;
+  font-family: 'Comic Neue', cursive;
+  border: none;
+  background: transparent;
+  resize: none;
+}
+
+.inputtexto:focus{
+  outline: none;
+}
+
+.inputtexto::placeholder{
+  color: #0A3871;
+}
+
+.logoprincipal{
+  position: absolute;
+  width: 120px;
+  height: 48px;
+  left: 40px;
+  top: 40px;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  top: 800px;
+}
+
+.botonencriptar{
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #0A3871;
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+  font-family: 'Comic Neue', cursive;
+  color: white;
+  font-weight: bolder;
+}
+
+.botondesencriptar{
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 328px;
+  height: 67px;
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  font-family: 'Comic Neue', cursive;
+  color: #0A3871;
+  font-weight: bolder;
+  
+}
+
+.seccionencriptar{
+  position: absolute;
+  width: 400px;
+  height: 840px;
+  left: 1200px;
+  top: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.inputencriptado{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #495057;
+  font-family: 'Comic Neue', cursive;
+  border: none;
+  background: transparent;
+  resize: none;
+}
+
+.inputencriptado:focus{
+  outline: none;
+}
+
+
+.divbotoncopiar{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+}
+
+.botoncopiar{
+  width: 336px;
+  height: 67px;
+  left: 1032px;
+  top: 885px;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bolder;
+}
