@@ -1,13 +1,16 @@
-const inputTexto = document.querySelector(".inputtexto");
-const inputEncriptado = document.querySelector(".inputencriptado");
+const areaTexto = document.querySelector(".areatexto");
+const areaEncriptado = document.querySelector(".areaencriptado");
 
 const botonEncriptar = document.querySelector(".botonencriptar");
 const botonDesencriptar = document.querySelector(".botondesencriptar");
 const botonCopiar = document.querySelector(".botoncopiar");
 
+const imgBuscando = document.getElementById("imgbuscando");
+const msgNoHayTexto = document.getElementById("msgnohaytexto");
+
 function analizarMensaje(){
-  var mensaje1 = inputTexto.value;
-  var mensaje2 = inputEncriptado.value;
+  var mensaje1 = areaTexto.value;
+  var mensaje2 = areaEncriptado.value;
   var caracteres = "abcdefghijklmnñopqrstuvwxyz ";
   var mensajeErroneo1= "";
   var mensajeErroneo2= "";
@@ -35,23 +38,35 @@ function analizarMensaje(){
 function encriptar(){
   if(analizarMensaje() == false) return;
 
-  var mensaje = inputTexto.value;
+  var mensaje = areaTexto.value;
   var mensajeEncriptado = mensaje.replaceAll("e","enter").replaceAll("i","imes").replaceAll("a","ai").replaceAll("o","ober").replaceAll("u","ufat");
 
-  inputEncriptado.value = mensajeEncriptado;
+  areaEncriptado.style.display = "block";
+  botonCopiar.style.display = "block";
+
+  imgBuscando.hidden = true;  
+  msgNoHayTexto.hidden = true;  
+
+  areaEncriptado.value = mensajeEncriptado;
 }
 
 function desencriptar(){
   if(analizarMensaje() == false) return;
 
-  var mensajeEncriptado = inputEncriptado.value;
+  var mensajeEncriptado = areaEncriptado.value;
   var mensajeDesencriptado = mensajeEncriptado.replaceAll("enter","e").replaceAll("imes","i").replaceAll("ai","a").replaceAll("ober","o").replaceAll("ufat","u");
 
-  inputTexto.value = mensajeDesencriptado;
+  areaEncriptado.style.display = "block";
+  botonCopiar.style.display = "block";
+
+  imgBuscando.hidden = true;  
+  msgNoHayTexto.hidden = true;  
+  
+  areaTexto.value = mensajeDesencriptado;
 }
 
 function copiar(){
-  var mensajeEncriptado = inputEncriptado.value;
+  var mensajeEncriptado = areaEncriptado.value;
   
   navigator.clipboard.writeText(mensajeEncriptado);
 }
