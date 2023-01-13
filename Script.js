@@ -74,4 +74,3 @@ function copiar(){
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
 botonCopiar.onclick = copiar;
-
