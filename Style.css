@@ -62,29 +62,31 @@ main{
   background: #0A3871;
   border-radius: 1.5em;
   width: 30%;
-  height: 4em;
+  height: 5.5em;
   font-family: 'Comic Neue', cursive;
   color: white;
   font-weight: bolder;
+  font-size: 0.7em;
 }
 
 .botondesencriptar{
   flex: none;
   width: 30%;
-  height: 4em;
+  height: 5.5em;
   background: #D8DFE8;
   border: 0.2em solid #0A3871;
   border-radius: 1.5em;
   font-family: 'Comic Neue', cursive;
   color: #0A3871;
   font-weight: bolder;
+  font-size: 0.7em;
 }
 
 .seccionencriptado{
   display: flex;
   position: relative;
   padding-top: 1.3em;
-  width: 25em;
+  width: 22.5%;
   background: #FFFFFF;
   box-shadow: 0em 1.5em 2em -0.5em rgb(0 0 0 / 25%);
   border-radius: 2em;
@@ -103,6 +105,7 @@ main{
   border: none;
   background: transparent;
   resize: none;
+  width: 90%;
 }
 
 .areaencriptado:focus{
@@ -114,7 +117,6 @@ main{
   width: 75%;
   left: 12.5%;
   right: 12.5%;
-  height: 20em;
   top: 12em;
 }
 
@@ -126,6 +128,7 @@ main{
   top: 34em;
   left: 12.5%;
   right: 12.5%;
+  font-size: 1em;
 }
 
 .msgnohaytexto strong{
@@ -138,15 +141,164 @@ main{
   display: flex;
   flex-direction: column-reverse;
   margin: 1em 2em;
+  width: 100%;
 }
 
 .botoncopiar{
   display: none;
-  width: 25em;
+  width: auto;
   height: 5em;
   border: 1px solid #0A3871;
   border-radius: 1.5em;
   color: #0A3871;
   font-family: 'Comic Neue', cursive;
   font-weight: bolder;
+  font-size: 0.85em;
+}
+
+@media screen and (min-width:375px) and (max-width:768px) {
+  main{
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 1.5em;
+  }
+
+  .secciontexto{
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    flex-direction: column;
+    margin:0 auto;
+    padding-top: 3em;
+  }
+
+  .logoprincipal{
+    left: 0;
+    margin-bottom: 1.5em;
+  }
+
+  .areatexto {
+    width: 90%;
+    height: 10em;
+    font-size: 1.5em;
+  }
+
+  .botonencriptar, .botondesencriptar{
+    width: 45%;
+    height: auto;
+  }
+
+  .seccionencriptado{
+    width: 100%;
+    flex-direction: column;
+    margin: 3em auto;
+  }
+
+  .areaencriptado, .msgnohaytexto{
+    position: static;
+  }
+
+  .msgnohaytexto{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .areaencriptado{
+    height: 5em;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  .imgbuscando{
+    width: 0%;
+    width: 0%;
+    left: 0%;
+    right: 0%;
+    height: 0em;
+    top: 0em;
+
+  }
+
+  .divbotoncopiar{
+    width: 90%;
+    margin: 1em auto;
+  }
+
+}
+
+@media screen and (min-width:0px) and (max-width:375px) {
+  main{
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 1.5em;
+  }
+
+  .secciontexto{
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    flex-direction: column;
+    margin:0 auto;
+    padding-top: 3em;
+  }
+
+  .logoprincipal{
+    left: 0;
+    margin-bottom: 1.5em;
+  }
+
+  .areatexto {
+    width: 90%;
+    height: 10em;
+    font-size: 1.5em;
+  }
+
+  .secciontextobotones{
+    flex-direction: column;
+  } 
+  
+  .botonencriptar, .botondesencriptar{
+    width: 100%;
+    height: 90%;
+    font-size: 1.05em;
+  }
+
+  .seccionencriptado{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 6.5em;
+  }
+
+  .areaencriptado, .msgnohaytexto{
+    position: static;
+  }
+
+  .msgnohaytexto{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 0.8em;
+  }
+
+  .areaencriptado{
+    height: 5em;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  .imgbuscando{
+    width: 0%;
+    width: 0%;
+    left: 0%;
+    right: 0%;
+    height: 0em;
+    top: 0em;
+
+  }
+
+  .divbotoncopiar{
+    width: 90%;
+    margin: 1em auto;
+  }
 }
