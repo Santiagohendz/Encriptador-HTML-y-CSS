@@ -1,6 +1,6 @@
 body{
-  font-family: 'Comic Neue', cursive;
-  background: #D8DFE8;
+  font-family: 'Oleo Script', cursive;
+  background: linear-gradient(135deg, #F403D1, #64B5F6) fixed;
 }
 
 main{
@@ -17,7 +17,7 @@ main{
 }
 
 .logoprincipal{
-  width: 7em;
+  width: 8%;
   position: relative;
   left: -25%;
 }
@@ -26,8 +26,8 @@ main{
   font-weight: 400;
   font-size: 2em;
   line-height: 1.5em;
-  color: #0A3871;
-  font-family: 'Comic Neue', cursive;
+  color: #002653;
+  font-family: 'Oleo Script', cursive;
   border: none;
   background: transparent;
   display: block;
@@ -40,13 +40,14 @@ main{
 }
 
 .areatexto::placeholder{
-  color: #0A3871;
+  color: #002653;
 }
 
 .advertencia{
+  color: #FFFFFF;
   width: auto;
   height: 1em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .secciontextobotones{
@@ -59,27 +60,29 @@ main{
 
 .botonencriptar{
   flex: none;
-  background: #0A3871;
+  background: #002653;
   border-radius: 1.5em;
-  width: 30%;
+  width: 35%;
   height: 5.5em;
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Oleo Script', cursive;
   color: white;
-  font-weight: bolder;
-  font-size: 0.7em;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
 }
 
 .botondesencriptar{
   flex: none;
-  width: 30%;
+  width: 35%;
   height: 5.5em;
-  background: #D8DFE8;
-  border: 0.2em solid #0A3871;
+  background: #FFFFFF;
+  border: 0.2em solid #002653;
   border-radius: 1.5em;
-  font-family: 'Comic Neue', cursive;
-  color: #0A3871;
-  font-weight: bolder;
-  font-size: 0.7em;
+  font-family: 'Oleo Script', cursive;
+  color: #002653;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
 }
 
 .seccionencriptado{
@@ -90,7 +93,11 @@ main{
   background: #FFFFFF;
   box-shadow: 0em 1.5em 2em -0.5em rgb(0 0 0 / 25%);
   border-radius: 2em;
-  margin: 3em 3em 0 0;
+  margin: 3.5em 3em 1em 0;
+}
+
+.botondesencriptar:hover, .botonencriptar:hover, .botoncopiar:hover{
+  scale: 1.1;
 }
 
 .areaencriptado{
@@ -101,7 +108,7 @@ main{
   font-size: 1.5em;
   line-height: 150%;
   color: #495057;
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Oleo Script', cursive;
   border: none;
   background: transparent;
   resize: none;
@@ -117,7 +124,8 @@ main{
   width: 75%;
   left: 12.5%;
   right: 12.5%;
-  top: 12em;
+  top: 11.5em;
+  filter: drop-shadow(0 0 0.75em #000000);
 }
 
 .msgnohaytexto{
@@ -147,13 +155,14 @@ main{
 .botoncopiar{
   display: none;
   width: auto;
-  height: 5em;
-  border: 1px solid #0A3871;
+  height: 4.5em;
+  border: 1px solid #002653;
   border-radius: 1.5em;
-  color: #0A3871;
-  font-family: 'Comic Neue', cursive;
+  color: #002653;
+  font-family: 'Oleo Script', cursive;
   font-weight: bolder;
-  font-size: 0.85em;
+  font-size: 0.9em;
+  cursor: pointer;
 }
 
 @media screen and (min-width:375px) and (max-width:768px) {

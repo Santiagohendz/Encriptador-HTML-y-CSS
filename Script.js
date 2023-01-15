@@ -30,6 +30,7 @@ function analizarMensaje(){
 
   if (mensajeErroneo1 == "ERROR" || mensajeErroneo2 == "ERROR"){
     validador = false;
+    alert("Ingrese carácteres válidos por favor");
   }
 
   return validador;
