@@ -54,7 +54,7 @@ function encriptar(){
 function desencriptar(){
   if(analizarMensaje() == false) return;
 
-  var mensajeEncriptado = areaEncriptado.value;
+  var mensajeEncriptado = areaTexto.value;
   var mensajeDesencriptado = mensajeEncriptado.replaceAll("enter","e").replaceAll("imes","i").replaceAll("ai","a").replaceAll("ober","o").replaceAll("ufat","u");
 
   areaEncriptado.style.display = "block";
@@ -63,7 +63,7 @@ function desencriptar(){
   imgBuscando.hidden = true;  
   msgNoHayTexto.hidden = true;  
   
-  areaTexto.value = mensajeDesencriptado;
+  areaEncriptado.value = mensajeDesencriptado;
 }
 
 function copiar(){
