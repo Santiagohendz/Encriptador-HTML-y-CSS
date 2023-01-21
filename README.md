@@ -22,4 +22,4 @@ El proyecto se trata de un encriptador de texto con diseño responsive.
 
 <h3>Preview</h3>
 
-![Encriptador Alura](https://user-images.githubusercontent.com/100981612/212521596-4cbf4414-ecbe-434f-aef8-1e7a20a2f742.png)
+![image](https://user-images.githubusercontent.com/100981612/213342833-8368051b-8da8-48cb-992a-c0b9d89e609e.png)
