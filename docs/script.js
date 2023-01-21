@@ -11,7 +11,7 @@ const msgNoHayTexto = document.getElementById("msgnohaytexto");
 function analizarMensaje(){
   var mensaje1 = areaTexto.value;
   var mensaje2 = areaEncriptado.value;
-  var caracteres = "abcdefghijklmnñopqrstuvwxyz \n";
+  var caracteres = "ºª!¡@#·~$%&/()=¿?^[]`+{}¨ç;,:._-1234567890abcdefghijklmnñopqrstuvwxyz \\\'\v\t\b\´\n\"";
   var mensajeErroneo1= "";
   var mensajeErroneo2= "";
   var validador = true;
